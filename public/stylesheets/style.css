@@ -8,6 +8,10 @@ body{
   font-family: 'Pacifico', cursive;
 }
 
+/*
+  Partially borrowed from:
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
+*/
 input, button, textarea{
   width: 80%;
   padding: 12px 20px;
