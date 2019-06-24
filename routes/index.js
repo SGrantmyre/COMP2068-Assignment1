@@ -13,7 +13,7 @@ router.get('/about', function(req, res, next){
 
 /* GET projects page*/
 router.get('/projects', function(req, res, next){
-  res.render('projects');
+  res.render('projects/list');
 });
 
 /* GET services page*/
@@ -25,6 +25,12 @@ router.get('/services', function(req, res, next){
 router.get('/contact', function(req, res, next){
   res.render('contact');
 });
+
+const projects = [
+  {
+    
+  }
+]
 
 
 module.exports = router;

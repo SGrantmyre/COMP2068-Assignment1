@@ -1,8 +1,32 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Caveat%7CKaushan+Script%7CPacifico%27');
+
+
+
+body{
+  align-content: center;
+  background-color: #705174;
+  font-family: 'Pacifico', cursive;
 }
 
-a {
-  color: #00B7FF;
+input, button, textarea{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  align-content: center;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.form-control{
+    border: 2px solid #705174;
+}
+
+.form-control:focus {
+  border: 3px solid #90a7db;
+}
+button:hover {
+  box-shadow: 10px 10px 5px grey;
 }

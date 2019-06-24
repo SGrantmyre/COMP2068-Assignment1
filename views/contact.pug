@@ -1,9 +1,16 @@
+//-
+    contact.pug
+    Shyla Grantmyre
+    Portfolio Site
+    This file is for the contact page
+
 extends layout
 
 block content
     h1 Contact Me!
     form(method = "POST")
         input(name="name" type="text" placeholder = "Your Name")
+        input(name="subject" type="text" placeholder = "Subject")
         input(name="email" type="email" placeholder = "Your Email")
         textarea(name="message", cols="30", rows="10",placeholder = "Write your message here...")
 
