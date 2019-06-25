@@ -21,11 +21,11 @@ input, button{
 
 textarea {
 	/* textfields styles*/
-    width: 90%;
+  width: 90%;
 	background-color: #333;
 	padding: 12px 20px;
-    margin: 8px;
-    box-sizing: border-box;
+  margin: 8px;
+  box-sizing: border-box;
 	font-family: 'Courgette', cursive;
   color: white;
 }
