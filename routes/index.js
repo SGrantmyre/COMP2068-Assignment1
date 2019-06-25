@@ -1,3 +1,10 @@
+/*
+index.js
+Shyla Grantmyre
+Portfolio Site
+This file is for the routes on the website
+*/
+
 var express = require('express');
 var router = express.Router();
 
@@ -13,7 +20,7 @@ router.get('/about', function(req, res, next){
 
 /* GET projects page*/
 router.get('/projects', function(req, res, next){
-  res.render('projects/list');
+  res.render('projects');
 });
 
 /* GET services page*/
@@ -26,11 +33,6 @@ router.get('/contact', function(req, res, next){
   res.render('contact');
 });
 
-const projects = [
-  {
-    
-  }
-]
 
 
 module.exports = router;

@@ -8,21 +8,27 @@ body{
   font-family: 'Pacifico', cursive;
 }
 
-/*
-  Partially borrowed from:
-  https://www.w3schools.com/css/tryit.asp?filename=trycss_forms
-*/
-input, button, textarea{
-  width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  align-content: center;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+input, button{
+	/* textfields styles*/
+    width: 30%;
+	background-color: #333;
+	padding: 12px 20px;
+    margin: 8px;
+    box-sizing: border-box;
+	font-family: 'Courgette', cursive;
+  color: white;
 }
 
+textarea {
+	/* textfields styles*/
+    width: 90%;
+	background-color: #333;
+	padding: 12px 20px;
+    margin: 8px;
+    box-sizing: border-box;
+	font-family: 'Courgette', cursive;
+  color: white;
+}
 
 .form-control{
     border: 2px solid #705174;
@@ -34,3 +40,26 @@ input, button, textarea{
 button:hover {
   box-shadow: 10px 10px 5px grey;
 }
+
+.grid-container{
+	/* flex box container */
+	display: flex;
+	justify-content: center;
+}
+
+.grid{
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	width: 900px;
+	flex-wrap: wrap;
+	background-color: #333;
+}
+
+.grid-item img{
+	margin: 20px;
+	/* change size of images */
+	width: 400px;
+	height: 200px;
+}
+
