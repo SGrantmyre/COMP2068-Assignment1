@@ -36,7 +36,7 @@ router.get('/contact', function(req, res, next){
   res.render('contact');
 });
 
-/*POST contact form 
+/*POST contact form */
 router.post('/send', async (req, res)=>{
   const output = `
   <p>New contact request</p>
@@ -49,7 +49,12 @@ router.post('/send', async (req, res)=>{
   <h3>Message: </h3>
   <p>${req.body.message}</p>
   `;
+  send(output).catch(console.error);
+  res.render('contact', {messageSent: 'Message Sent' });
+  
+});
 
+async function send (output){
   let transporter = nodemailer.createTransport({
     host: "smtp-mail.outlook.com",
     port: 587,
@@ -72,8 +77,10 @@ router.post('/send', async (req, res)=>{
 
   });
 
-});
-*/
+ 
+
+}
+
 
 
 

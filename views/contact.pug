@@ -9,7 +9,7 @@ extends layout
 block content
     //-header/title
     h1 Contact Me!
-
+    h2 #{messageSent}
     //-contact form
     form(method = "POST" action="send")
         input(name="name" type="text" placeholder = "Your Name")
