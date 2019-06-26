@@ -55,6 +55,7 @@ router.post('/send', async (req, res)=>{
 });
 
 async function send (output){
+  //borrowed mostly from nodemailer website: https://nodemailer.com/about/
   let transporter = nodemailer.createTransport({
     host: "smtp-mail.outlook.com",
     port: 587,
