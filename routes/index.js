@@ -8,6 +8,9 @@ This file is for the routes on the website
 var express = require('express');
 var router = express.Router();
 
+var nodemailer = require('nodemailer');
+var bodyParser = require('body-parser');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index');
@@ -32,6 +35,45 @@ router.get('/services', function(req, res, next){
 router.get('/contact', function(req, res, next){
   res.render('contact');
 });
+
+/*POST contact form 
+router.post('/send', async (req, res)=>{
+  const output = `
+  <p>New contact request</p>
+  <h3>Contact Details</h3>
+  <ul>
+    <li>Name: ${req.body.name}</li>
+    <li>Email: ${req.body.email}</li>
+    <li>Subject: ${req.body.subject}</li>
+  </ul>
+  <h3>Message: </h3>
+  <p>${req.body.message}</p>
+  `;
+
+  let transporter = nodemailer.createTransport({
+    host: "smtp-mail.outlook.com",
+    port: 587,
+    secure: false, 
+    auth: {
+      user: 'sgrantmyre@outlook.com', 
+      pass: '8sJjMagRWK6yKtY'
+    },
+    tls:{
+      rejectunauthorized:false
+    }
+  });
+
+  
+  let info = await transporter.sendMail({
+    from: '"Contact" <sgrantmyre@outlook.com>', 
+    to: "200379257@student.georgianc.on.ca", 
+    subject: "Contact request", 
+    html: output 
+
+  });
+
+});
+*/
 
 
 
